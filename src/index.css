@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent; 
+  height: 100vh; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../public/it.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation-name: fadeIn;
+  animation-duration: 3.5s; 
+  animation-timing-function: ease-in-out; 
+  animation-fill-mode: forwards; 
+  opacity: 0; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.readingText {
+  font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form {
+  width: 80%;
+  max-width: 400px;
+  background-color: transparent; 
+  padding: 20px;
+  margin: 0 auto;
+  position: relative; 
+}
+
+#dob,
+button,
+input {
+  font-size: 1.3em;
+  width: 100%;
+  box-sizing:border-box;
+  margin-bottom: 10px; 
+}
+
+button {
+  background-color:rgb(0, 0, 232);
+  color: aliceblue;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(23, 54, 211);
+}
+button:active {
+  background-color: black;
+}
+
+p, label {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input {
+  margin-top: 10px;
+  font-size: 1.3em;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
 }
