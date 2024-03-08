@@ -21,7 +21,7 @@ const LandingPage = () => {
   };
 
   useEffect(() => {
-    fetch('https://zodiacsignsapp-api.onrender/readings')
+    fetch('https://zodiacsignsapp-api.onrender.com/readings')
       .then(response => response.json())
       .then(data => {
         setReadings(data);
@@ -44,7 +44,7 @@ const LandingPage = () => {
     setCalculatedZodiacSign(zodiacSign);
   
     try {
-      const response = await fetch(`https://zodiacsignsapp-api.onrender/readings`);
+      const response = await fetch(`https://zodiacsignsapp-api.onrender.com/readings`);
       const data = await response.json();
   
 
@@ -66,7 +66,7 @@ const LandingPage = () => {
       return;
     }
     try {
-      const response = await fetch(`https://zodiacsignsapp-api.onrender/checkUser?email=${email}`);
+      const response = await fetch(`https://zodiacsignsapp-api.onrender.com/checkUser?email=${email}`);
       const data = await response.json();
       if (data.exists) {
         setExistingUser(true);
@@ -82,7 +82,7 @@ const LandingPage = () => {
   };
   
   const handleSubscribe = async () => {
-    const response = await fetch('https://zodiacsignsapp-api.onrender/subscribeNewsletter', {
+    const response = await fetch('https://zodiacsignsapp-api.onrender.com/subscribeNewsletter', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
