@@ -147,8 +147,8 @@ const LandingPage = () => {
         <br />
         {showSubscribeForm && (
           <>
-            {existingUser && <p style={{ color: 'red' }}>User with this email already exists. Please sign in.</p>}
-            {subscriptionSuccess && <p style={{ color: 'green' }}>Subscription successful! Check your email for mor info.</p>}
+            {existingUser && <p style={{ color: 'red' }}>User with this email already exists.</p>}
+            {subscriptionSuccess && <p style={{ color: 'green' }}>Subscription successful! Check your email for more info.</p>}
             <h1 style={{ color: 'white' }}>Subsribe to the newsletter for free to receive your monthly astrological reading:</h1>
             <label>Zodiac Sign</label>
             <br />
