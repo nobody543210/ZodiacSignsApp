@@ -23,10 +23,6 @@
   opacity: 0; 
 }
 
-.readingText {
-  font-size: 1.2em;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0; 
