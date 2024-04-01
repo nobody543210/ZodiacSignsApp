@@ -33,7 +33,7 @@
 }
 
 .form {
-  width: 80vw;
+  width: 100%;
   background-color: transparent; 
   padding: 20px;
   margin: 0 auto;
@@ -47,7 +47,7 @@ input {
   font-size: 1.3em;
   box-sizing:border-box;
   margin-bottom: 10px; 
-  width: 100%
+  width: 80%
 }
 
 button {
