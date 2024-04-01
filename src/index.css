@@ -89,16 +89,13 @@ p, label {
 
 input {
   margin-top: 10px;
-  font-size: 1.3em;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 10px;
   color: white;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
   padding: 10px;
   border-radius: 5px;
 }
+
 
 input:focus {
   outline: none;
