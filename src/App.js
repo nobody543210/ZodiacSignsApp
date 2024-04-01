@@ -116,7 +116,7 @@ const App = () => {
   };
 
   return (
-    <div className='form'>
+    <div className='App'>
       <form>
         <input
           id='dob'
