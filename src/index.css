@@ -23,6 +23,8 @@
   opacity: 0; 
 }
 
+
+
 @keyframes fadeIn {
   0% {
     opacity: 0; 
@@ -33,21 +35,23 @@
 }
 
 .form {
-  width: 100%;
+  width: 80%; /* Set a default width for larger screens */
+  max-width: 400px; /* Set a max-width to prevent it from getting too wide */
   background-color: transparent; 
   padding: 20px;
   margin: 0 auto;
   position: relative;
-  transition: all 0.3s;
+  transition: all 0.3s; /* Add a transition for smoother resizing */
 }
 
 #dob,
 button,
 input {
   font-size: 1.3em;
+  width: 100%;
   box-sizing:border-box;
   margin-bottom: 10px; 
-  width: 80%
+  width: 80vw;
 }
 
 button {
@@ -97,7 +101,3 @@ input {
 }
 
 
-input:focus {
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.7);
-}
