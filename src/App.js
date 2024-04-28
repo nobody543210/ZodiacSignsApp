@@ -150,7 +150,7 @@ const App = () => {
           <>
             {existingUser && <p style={{ color: 'red' }}>User with this email already exists.</p>}
             {subscriptionSuccess && <p style={{ color: 'green' }}>Subscription successful! Check your email for more info.</p>}
-            <h1 style={{ color: 'white' }}>Subsribe to the newsletter for free to receive your monthly astrological reading:</h1>
+            <h1 style={{ color: 'white' }}>Subscribe to the newsletter for free to receive your monthly astrological reading:</h1>
             <label>Zodiac Sign</label>
             <br />
             <input type="text" value={calculatedZodiacSign} disabled />
