@@ -35,13 +35,13 @@
 }
 
 .form {
-  width: 80%; /* Set a default width for larger screens */
-  max-width: 400px; /* Set a max-width to prevent it from getting too wide */
+  width: 80%; 
+  max-width: 400px; 
   background-color: transparent; 
   padding: 20px;
   margin: 0 auto;
   position: relative;
-  transition: all 0.3s; /* Add a transition for smoother resizing */
+  transition: all 0.3s;
 }
 
 #dob,
@@ -66,10 +66,10 @@ button {
 }
 
 button:hover {
-  background-color: rgb(23, 54, 211);
+  background-color: black;
 }
 button:active {
-  background-color: black;
+  background-color:  rgb(23, 54, 211);
 }
 
 p, label {
