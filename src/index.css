@@ -34,15 +34,7 @@
   }
 }
 
-form {
-  width: 80%; 
-  max-width: 400px; 
-  background-color: transparent; 
-  padding: 20px;
-  margin: 0 auto;
-  position: relative;
-  transition: all 0.3s;
-}
+
 
 #dob,
 button,
