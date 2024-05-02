@@ -9,10 +9,10 @@
   flex-direction: row;
   align-items: center;
   background-image: url('../public/sk.jpg');
-
-  background-attachment: scroll;
+  position: fixed;
+  background-attachment: fixed;
   width: 100vw;
-  max-width:100%;
+ 
   
   z-index: -1;
   animation-name: fadeIn;
